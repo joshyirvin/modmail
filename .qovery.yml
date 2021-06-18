@@ -1,0 +1,18 @@
+---
+application:
+  name: "modmail"
+  project: "frolobotmail"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "db1"
+  version: "4.4"
+- type: "MONGODB"
+  name: "db2"
+  version: "4.4"
+routers:
+- name: "main-modmail"
+  routes:
+  - application_name: "modmail"
+    paths:
+    - "/*"
